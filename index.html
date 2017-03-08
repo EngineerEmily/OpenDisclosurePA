@@ -14,7 +14,7 @@
 
         // Create the data table Pie Chart.
 		var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1wSQAdBFj0UHGNKNEX8vxcK7eOEmPtPQdSLNe2CDzlH0/edit#gid=453712043');
-		query.setQuery('select B, sum(AD) group by AD order by sum(H) desc');
+		query.setQuery('select B, sum(AD) group by B order by sum(AD) desc');
 		query.send(handleQueryResponse);
 		}
 
